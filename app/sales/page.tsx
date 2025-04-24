@@ -20,6 +20,8 @@ const initialProducts: Product[] = [
   { name: '라쿤수세미', price: 5000, options: ['베이지', '코코아', '카멜', '민트', '분홍', '레몬'] },
   { name: '미니라쿤', price: 5000, options: ['베이지', '코코아', '카멜', '민트', '분홍', '레몬'] },
   { name: '실바늘세트', price: 2000 },
+  { name: '카피바라 인형', price: 7000, options: ['콧물', '풍선', '꼬리', '핸들', '핸들거북이'] },
+  { name: '뽑기', price: 3000 },
 ];
 
 export default function SalesPage() {
@@ -128,9 +130,9 @@ export default function SalesPage() {
         product={selectedProduct}
         qty={qty}
         setQty={setQty}
-        option={option}
-        setOption={setOption}
         addRecord={addRecord}
+        setOption={setOption}
+        option={option}
       />
 
       <RecordList
